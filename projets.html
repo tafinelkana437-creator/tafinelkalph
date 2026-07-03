@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-section {
+            min-height: 100vh;
+            padding: 80px 20px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .projects-header {
+            text-align: center;
+            margin-bottom: 60px;
+            color: white;
+        }
+        
+        .projects-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .projects-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project-card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        
+        .project-card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .project-card-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        
+        .project-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .project-card-tag {
+            font-size: 0.8rem;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        
+        .project-card-arrow {
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            margin-bottom: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: opacity 0.3s;
+        }
+        
+        .back-button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>TAFIN ELKANA</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html#apropos">A propos</a>
+            </li>
+            
+            <li>
+                <a href="index.html#competences">Experience</a>
+            </li>
+
+            <li>
+                <a href="projets.html" class="active">Projets</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <a class="visit-btn" href="#" target="_blank" rel="noopener">Visit Github</a>
+    </header>
+
+    <section class="projects-section">
+        <a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i> Retour au Portfolio</a>
+        
+        <div class="projects-header">
+            <h2>Mes Projets</h2>
+            <p>Découvrez mes réalisations et créations</p>
+        </div>
+        
+        <div class="projects-grid">
+            <a href="index2.html" class="project-card">
+                <div class="project-card-image">
+                    <i class="fa-solid fa-images"></i>
+                </div>
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Galerie de Projets</h3>
+                    <p class="project-card-description">Découvrez ma galerie complète de designs graphiques, photographies et créations visuelles</p>
+                    <div class="project-card-footer">
+                        <span class="project-card-tag">Design & Photo</span>
+                        <span class="project-card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="mdp.html" class="project-card">
+                <div class="project-card-image">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Générateur de Mot de Passe</h3>
+                    <p class="project-card-description">Un outil interactif pour générer des mots de passe sécurisés avec options personnalisables</p>
+                    <div class="project-card-footer">
+                        <span class="project-card-tag">JavaScript</span>
+                        <span class="project-card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

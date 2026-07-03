@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <header class="projects-page-header">
+            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Retour au Portfolio</a>
+            <h1>Mes Projets</h1>
+            <p>Galerie de mes réalisations et projets récents</p>
+        </header>
+        
+        <h2 class="gallery-section-title">Documents A4 & Design</h2>
+        <div class="gallery" id="gallery-portfolio"></div>
+        
+        <h2 class="gallery-section-title">Photographe & Créatif</h2>
+        <div class="gallery" id="gallery-photos"></div>
+    </div>
+    
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Titre du Projet</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <img id="modalImage" src="" alt="" class="modal-image">
+            <div class="modal-body">
+                <p id="modalDescription"></p>
+                <p><strong>Type:</strong> <span id="modalType"></span></p>
+                <p><strong>Détails:</strong> <span id="modalTech"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
